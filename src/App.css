@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+}
+
+body {
+  color: #f7f7f7;
+  background-color: black;
+  animation-name: page-load;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+@keyframes page-load {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes categories-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
